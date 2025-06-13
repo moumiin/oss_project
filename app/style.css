@@ -1,0 +1,116 @@
+body {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  margin: 30px;
+  background-color: #f0e9f4;
+  color: #4a3f55;
+}
+
+.mood-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.3s ease;
+}
+
+#mood-buttons button {
+  font-size: 24px;
+  padding: 15px 30px;
+  margin: 10px;
+  border: none;
+  background-color: #b292c9;
+  color: white;
+  cursor: pointer;
+  border-radius: 12px;
+  box-shadow: 0 8px 15px rgba(178, 146, 201, 0.4);
+  transition: all 0.3s ease;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.mood-buttons button:hover {
+  background-color: #8a5daf;
+  box-shadow: 0 12px 20px rgba(138, 93, 175, 0.6);
+  transform: translateY(-3px);
+}
+
+.mood-row {
+  display: flex;
+  gap: 10px;
+}
+
+.mood-buttons.inline {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  justify-content: center;
+}
+
+.mood-buttons.inline .mood-row {
+  flex-direction: row;
+  margin: 0;
+  gap: 10px;
+}
+
+#mood-buttons.inline button {
+  font-size: 18px; 
+  padding: 10px 20px; 
+  margin: 5px;
+  border: none;
+  background-color: #b292c9;
+  color: white;
+  cursor: pointer;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(178, 146, 201, 0.3);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease;
+}
+
+#mood-buttons.inline button:hover {
+  background-color: #8a5daf;
+  box-shadow: 0 10px 15px rgba(138, 93, 175, 0.5);
+  transform: translateY(-2px);
+}
+
+#music-result img {
+  margin-top: 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(74, 63, 85, 0.15);
+  transition: box-shadow 0.3s ease;
+}
+
+#music-result img:hover {
+  box-shadow: 0 12px 28px rgba(74, 63, 85, 0.3);
+}
+
+#music-result p strong {
+  font-size: 28px;
+  color: #6c4a8e;
+  font-weight: 700;
+  margin-bottom: 10px;
+  display: block;
+  letter-spacing: 0.06em;
+}
+
+#retry-button {
+  margin-top: 25px;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: #6c4a8e;
+  color: white;
+  border-radius: 14px;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  box-shadow: 0 8px 15px rgba(108, 74, 142, 0.5);
+  transition: all 0.3s ease;
+}
+
+#retry-button:hover {
+  background-color: #532f70;
+  box-shadow: 0 12px 20px rgba(83, 47, 112, 0.7);
+  transform: translateY(-3px);
+}
