@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>기분별 음악 추천기</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>오늘 기분은 어때요?</h1>
+  <div class="mood-buttons" id="mood-buttons">
+    <div class="mood-row row-1">
+        <button onclick="recommendMusic('happy')">😊 기쁨</button>
+        <button onclick="recommendMusic('sad')">😢 슬픔</button>
+        <button onclick="recommendMusic('focus')">🧘 집중</button>
+    </div>
+    <div class="mood-row row-2">
+        <button onclick="recommendMusic('angry')">😠 짜증</button>
+        <button onclick="recommendMusic('tired')">😴 피곤</button>
+        <button onclick="recommendMusic('comfort')">🌙 편안</button>
+    </div>
+  </div>
+
+
+  <div id="music-result"></div>
+
+  <!-- 다시 추천하기 버튼, 처음엔 숨김 -->
+  <div id="retry-container" style="display:none; margin-top: 20px;">
+    <button id="retry-button">다른 추천!!</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
